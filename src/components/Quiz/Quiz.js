@@ -8,15 +8,6 @@ const Quiz = ({quiz, questions}) => {
   const quizIndex = questions.indexOf(quiz);
   let quizNumber = quizIndex + 1;
 
-  const handleCorrectAnswer = (option) => {
-    if(correctAnswer === option){
-      alert("Correct Answer")
-    }
-    else{
-      alert("Not Correct");
-    }
-  }
-
   return (
     <div className='mx-auto mb-5'>
       <div className='bg-gray-300'>
@@ -27,11 +18,12 @@ const Quiz = ({quiz, questions}) => {
               key={id}
               option={option}
               options={options}
-              handleCorrectAnswer={handleCorrectAnswer}
+              correctAnswer={correctAnswer}
             ></QuizOptions>)
           }
         </div>
       </div>
+      
     </div>
   );
 };
