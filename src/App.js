@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import AllQuiz from './components/AllQuiz/AllQuiz';
 import Blog from './components/Blog/Blog';
 import Error from './components/Error/Error';
 import Statistics from './components/Statistics/Statistics';
@@ -27,6 +28,13 @@ function App() {
         {
           path: 'blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/:topicID',
+          loader: async ({params}) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicID}`)
+          },
+          element: <AllQuiz></AllQuiz>
         }
       ]
     },

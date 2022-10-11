@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Topic = ({topic}) => {
 
   const {id, name, logo, total} = topic;
+
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate(`/${id}`);
+  }
 
   return (
     <div>
@@ -15,7 +21,7 @@ const Topic = ({topic}) => {
                   <div>{name}</div>
                   <div>Total Quiz: {total}</div>
                 </div>
-                <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Start practice</button>
+                <button onClick={handleNavigate} type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Start practice</button>
               </div>
           </div>
         </div>
