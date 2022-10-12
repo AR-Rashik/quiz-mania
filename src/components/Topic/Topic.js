@@ -14,7 +14,7 @@ const Topic = ({topic}) => {
     <div>
       <div className="rounded flex items-center justify-center w-full">
         <div className=" rounded-md shadow-md bg-rose-200">
-          <img src={logo} alt="" className="object-cover object-center w-full rounded-t-md dark:bg-rose-400" />
+          <img src={logo} alt="" className="object-cover object-center w-full rounded-t-md bg-rose-800" />
           <div className="flex flex-col justify-between p-6 space-y-8">
               <div className="space-y-2">
                 <div className='flex items-center justify-between mb-5'>

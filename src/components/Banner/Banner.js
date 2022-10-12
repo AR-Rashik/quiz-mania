@@ -4,7 +4,7 @@ const Banner = () => {
   return (
         <div className="w-10/12 mx-auto my-8">
           <div className="flex flex-col md:flex-row items-strech justify-between bg-rose-100 p-8 rounded-md">
-              <div className="flex flex-col justify-center md:w-1/2 sm:text-center md:text-left">
+              <div className="flex flex-col justify-center md:w-1/2 text-center md:text-left">
                   <h1 className="text-3xl lg:text-4xl font-semibold text-rose-800">Trust yourself...</h1>
                   <p className="text-base lg:text-xl text-rose-800 mt-2">
                   And test yourself by playing the <span className="font-bold">Quiz.</span>

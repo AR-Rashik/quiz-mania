@@ -31,15 +31,19 @@ const Statistics = () => {
   console.log(total);
 
   return (
-    <div className='flex justify-center items-center lg:w-1/2 mx-auto md:w-10/12'>
-      <div>
-        <BarChart width={400} height={450} data={total}>
-          <Bar dataKey="total" fill="#8884d8"></Bar>
-          <XAxis dataKey="name" />
-            <YAxis dataKey="total" />
-            <Tooltip></Tooltip>
-        </BarChart>
-      </div>
+    <div className=' lg:w-1/2 mx-auto md:w-10/12'>
+      <h2 className='text-rose-800 text-3xl text-center mt-8 mb-3'>Quiz Statistics</h2>
+      <div className='border-b-2 border-rose-200 mb-8'></div>
+      <div className='flex justify-center items-center mt-10'>
+        <div>
+          <BarChart width={500} height={450} data={total}>
+            <Bar dataKey="total" fill="#be123c"></Bar>
+            <XAxis dataKey="name" />
+              <YAxis dataKey="total" />
+              <Tooltip></Tooltip>
+          </BarChart>
+        </div>
+    </div>
     </div>
   );
 };
