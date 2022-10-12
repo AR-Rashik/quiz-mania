@@ -2,7 +2,7 @@
 
 This project is created by using [Tailwind CSS](https://tailwindcss.com/) and [React](https://reactjs.org/)
 
-## There are fou quiz topic in this site.
+## There are four quiz topic in this site.
 
 - React
 - Javascript
@@ -17,6 +17,4 @@ This project is created by using [Tailwind CSS](https://tailwindcss.com/) and [R
 - A statistic bar added on the page with recharts and axios.
 - A blog page added including some questions and answers.
 
-### Live site:
-
-[Quiz Mania](https://quiz-mania-site.netlify.app/).
+### Live site: [Quiz Mania](https://quiz-mania-site.netlify.app/).
