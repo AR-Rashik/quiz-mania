@@ -20,8 +20,8 @@ const Quiz = ({quiz, questions}) => {
   
 
   return (
-    <div className='mx-auto mb-5'>
-      <div className='bg-rose-100 relative p-4 rounded-md'>
+    <div className='mx-auto mb-10'>
+      <div className='bg-rose-100 relative p-4 rounded-md shadow-lg shadow-rose-50'>
         <h4 className='text-center text-rose-800 text-lg font-medium my-3 mx-16'>Quiz {quizNumber} : {slicedQuestion}</h4>
         <EyeIcon onClick={handleBtn}  className="h-6 w-6 text-rose-800 hover:text-rose-600 absolute top-2 right-2 cursor-pointer"/>
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 p-3 gap-3'>
